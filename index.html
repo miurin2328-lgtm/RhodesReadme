@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- Tells the browser to use UTF-8 so all characters display properly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the layout adjust nicely on phones and tablets -->
+  <title>Rhodes Foreshore</title> <!-- Sets the name shown in the browser tab -->
+  <link rel="stylesheet" href="styles.css"> <!-- Loads the external CSS file for styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Starts loading fonts early for better performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Allows fonts to load from another site securely -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Schoolbell&family=Tangerine:wght@400;700&display=swap" rel="stylesheet"> <!-- Imports custom fonts from Google Fonts -->
+</head>
+
+<body>
+
+<header class="foreshore-banner"> <!-- Main banner section at the top of the page -->
+  <div class="wave-wrap"> 
+    <div class="wiggle-line left-wave"> <!-- Left wave line -->
+      <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"> <!-- SVG used to draw the wave -->
+        <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+              stroke="#7387A4" stroke-width="20" fill="none" /> <!-- Wavy path with thick blue stroke, no fill -->
+      </svg>
+    </div>
+    <h1 class="foreshore-title">Rhodes Foreshore</h1> <!-- Main heading for the page -->
+    <div class="wiggle-line right-wave"> <!-- Right wave line -->
+      <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+              stroke="#7387A4" stroke-width="20" fill="none" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="wave-wrap2"> 
+    <nav class="foreshore-nav"> <!-- Navigation bar for page links -->
+
+      <div class="wiggle-line2 left-wave"> <!-- Left wave line above nav links -->
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+                stroke="#7387A4" stroke-width="20" fill="none" />
+        </svg>
+      </div>
+
+      <ul class="home-links"> <!-- List of navigation links -->
+        <li><a href="index.html" class="home-button active">Home</a></li> <!-- Link to homepage, marked as active -->
+        <li><a href="events.html" class="home-button">Events</a></li> <!-- Link to events page -->
+        <li><a href="transport.html" class="home-button">Transport</a></li> <!-- Link to transport page -->
+      </ul>
+
+      <div class="wiggle-line2 right-wave"> <!-- Right wave line below nav links -->
+        <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+                stroke="#7387A4" stroke-width="20" fill="none" />
+        </svg>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="intro"> <!-- Intro section with layered visuals and a welcoming message -->
+
+  <div class="image-overlay"> <!-- Main visual layer with floating shapes and headline -->
+    <img src="assets/images/floating10.jpg" alt="Circle 1" class="circle img1 hover-zoom">
+    <img src="assets/images/floating11.jpeg" alt="Square 1" class="square img2 hover-zoom">
+    <img src="assets/images/floating1.jpg" alt="Circle 2" class="circle img3 pulse">
+    <img src="assets/images/floating6.jpg" alt="Square 2" class="square img4 hover-zoom">
+    <img src="assets/images/floating12.jpg" alt="Square 3" class="square img5 hover-zoom">
+    <img src="assets/images/floating9.jpg" alt="Circle 3" class="circle img6 pulse">
+    <img src="assets/images/floating3.jpeg" alt="Circle 4" class="circle img7 hover-zoom">
+    <img src="assets/images/floating5.jpg" alt="Circle 5" class="circle img8 pulse">
+    <img src="assets/images/floating2.jpg" alt="Circle 6" class="circle img9 pulse">
+    <img src="assets/images/floating13.jpg" alt="Circle 7" class="circle img10 hover-zoom">
+    <img src="assets/images/floating7.jpg" alt="Circle 8" class="circle img11 hover-zoom">
+    <img src="assets/images/floating8.webp" alt="Square 4" class="square img12 hover-zoom">
+    <img src="assets/images/floating4.jpg" alt="Circle 9" class="circle img13 pulse">
+
+    <h3>Discover Rhodes: a place for families, friends, and individuals of all walks of life.</h3>
+  </div>
+
+  <div class="image-overlay-alt"> <!-- Alternate layout, for smaller screens or animation swap -->
+    <img src="assets/images/floating4.jpg" alt="Alt Image 1" class="alt-img">
+    <img src="assets/images/floating8.webp" alt="Alt Image 2" class="alt-img">
+    <img src="assets/images/floating2.jpg" alt="Alt Image 3" class="alt-img">
+    <h3>Discover Rhodes: a place for families, friends, and individuals of all walks of life.</h3>
+  </div>
+
+</section>
+
+<section class="homenav"> <!-- Section with top and bottom images framing a simple nav menu -->
+
+  <!-- Top image placeholder -->
+  <div class="image-top">
+    <img src="assets/images/floating13.jpg" alt="Top image">
+  </div>
+
+  <!-- Navigation menu -->
+  <nav class="nav-menu"> <!-- Internal page links with dot dividers -->
+    <a href="#about" class="nav-button">About the place</a>
+    <span class="dot">•</span>
+    <a href="#things" class="nav-button">Things to do</a>
+    <span class="dot">•</span>
+    <a href="#transport" class="nav-button">How to get there</a>
+  </nav>
+
+  <!-- Bottom image placeholder -->
+  <div class="image-bottom">
+    <img src="assets/images/Rhodes1.jpg" alt="Bottom image">
+  </div>
+  
+</section>
+
+<div class="wiggle-line" id="things"> <!-- Wwave divider for the 'Things to do' section -->
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+          stroke="#7387A4" stroke-width="40" fill="none" />
+  </svg>
+</div>
+
+<section class="activities"> <!-- Section showing Rhodes activities with switchable views -->
+
+  <h2>Complete Rhodes Activities</h2>
+
+  <a href="events.html" class="view-events commonbutton">View events</a>
+
+  <p class="prompt">Click the below boxes to view activities by:</p>
+
+  <div class="activity-options"> <!-- Buttons to switch between trail, map, and list views -->
+    <button class="displayChange selected" data-display="trail-view">Trail</button>
+    <button class="displayChange" data-display="map-view">Map</button>
+    <button class="displayChange" data-display="list-view">List</button>
+  </div>
+
+  <div id="trail-view" class="activity-content"> <!-- Trail-style layout with vertical SVG path -->
+    <svg class="trail-line" viewBox="0 0 100 1200" preserveAspectRatio="none">
+      <path d="M50,0 C20,100 80,200 50,300 C20,400 80,500 50,600 C20,700 80,800 50,900 C20,1000 80,1100 50,1200"
+            stroke="#D572AB" stroke-width="6" fill="none" />
+    </svg>
+
+    <div class="trail-point">
+      <img src="assets/images/thingstodo1.jpg" alt="Walking Path" class="trail-icon">
+      <h4>Walking & Running Path</h4>
+      <p>Families can enjoy scenic riverside paths connecting Heritage Walk to Parramatta River.</p>
+    </div>
+
+    <div class="trail-point">
+      <img src="assets/images/thingstodo3.jpeg" alt="Picnic Area" class="trail-icon">
+      <h4>Picnic Areas</h4>
+      <p>Gather with friends or family for a riverside picnic or BBQ in open green spaces.</p>
+    </div>
+
+    <div class="trail-point">
+      <img src="assets/images/thingstodo2.jpg" alt="Dog Park" class="trail-icon">
+      <h4>Dog-Friendly Spaces</h4>
+      <p>Let your pup run free in off-leash areas and enjoy welcoming dog-friendly parks.</p>
+    </div>
+  </div>
+
+  <div id="map-view" class="activity-content" style="display: none;"> <!-- Map-style layout with positioned items -->
+    <div class="map-layout">
+      <div class="map-item top-left">
+        <div class="map-image"></div>
+        <div class="map-text">
+          <h4>Walking & Running Path</h4>
+          <p>Stroll or jog along the scenic riverside paths that connect Rhodes to the Parramatta River Heritage Walk.</p>
+        </div>
+      </div>
+
+      <div class="map-item bottom-right">
+        <div class="map-image"></div>
+        <div class="map-text">
+          <h4>Dog-friendly Spaces</h4>
+          <p>Let your pup run free at the off-leash areas and enjoy the welcoming dog-friendly parks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="list-view" class="activity-content" style="display: none;"> <!-- Grid-style layout with images and descriptions -->
+    <div class="activity-grid">
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/thingstodo1.jpg" alt="Walking & Running Path">
+        </div>
+        <h3>Walking & Running Path</h3>
+        <p>Stroll or jog along the scenic riverside paths that connect Rhodes to the Parramatta River Heritage Walk.</p>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/thingstodo2.jpg" alt="Dog-friendly spaces">
+        </div>
+        <h3>Dog-friendly spaces</h3>
+        <p>Let your pup run free at the off-leash areas and enjoy the welcoming dog-friendly parks.</p>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/floating4.jpg" alt="Playgrounds for kids">
+        </div>
+        <h3>Playgrounds for kids</h3>
+        <p>Families can relax while children explore safe and modern play equipment by the water.</p>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/thingstodo3.jpeg" alt="Picnic areas">
+        </div>
+        <h3>Picnic areas</h3>
+        <p>Gather with friends or family for a riverside picnic or a barbecue in the open green spaces.</p>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/list.jpg" alt="Riverside views & sunset spots">
+        </div>
+        <h3>Riverside views & sunset spots</h3>
+        <p>Catch stunning sunset views over the water, whether from the pathways or the bridge crossing.</p>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-image">
+          <img src="assets/images/events3.jpg" alt="Local events">
+        </div>
+        <h3>Local events</h3>
+        <p>Rhodes offers lively moments that bring locals and visitors together.</p>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Refer to AI pdf for the below code -->
+  <script> 
+    const displayButtons = document.querySelectorAll('.displayChange');
+    const contents = document.querySelectorAll('.activity-content');
+
+    displayButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Switch selected button
+        displayButtons.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+
+        // Hide all views
+        contents.forEach(content => content.style.display = 'none');
+
+        // Show selected view
+        const targetId = button.dataset.display;
+        document.getElementById(targetId).style.display = 'block';
+      });
+    });
+  </script>
+</section>
+
+<div class="wiggle-line" id="transport">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50" 
+          stroke="#7387A4" stroke-width="40" fill="none" />
+  </svg>
+</div>
+
+<section class="transport-section"> <!-- Section showing how to get to Rhodes -->
+
+  <div class="transport-content"> <!-- Three-part layout: left spacer, centre info, right image -->
+    <div class="transport-left"></div> <!-- Empty div, likely used for spacing or background styling -->
+
+    <div class="transport-center"> <!-- Main content with heading, description, and link -->
+      <h2>How To Get There</h2>
+      <p>Rhodes is easy to reach, whether you arrive by train at Rhodes Station or by car with plenty of nearby parking.</p>
+      <a href="transport.html" class="transport-button commonbutton">View transport options</a>
+    </div>
+
+    <div class="transport-right"> <!-- Image showing transport or location visuals -->
+      <img src="assets/images/transport.jpg" alt="Transport image">
+    </div>
+  </div>
+
+</section>
+
+<section class="rhodes-feature" id="about"> <!-- Section introducing Rhodes and its cultural context -->
+
+  <div class="rhodes-container"> <!-- Main layout with images and descriptive text -->
+    <div class="rhodes-image left">
+      <img src="assets/images/land1.jpg" alt="Left image">
+    </div>
+
+    <div class="rhodes-text"> <!-- Text block describing Rhodes and its significance -->
+      <p>
+        Rhodes, on the lands of the Wangal people of the Eora Nation, sits along the Parramatta River in the City of Canada Bay. Today, its riverside pathways, parks, and dog-friendly spaces draw locals and visitors for walking, cycling, picnics, and sunsets, with easy access from nearby shops and transport. As part of the Parramatta River Heritage Walk, Rhodes offers both a vibrant community hub for recreation and a gateway to the river’s deeper cultural and historical stories.
+      </p>
+    </div>
+
+    <div class="rhodes-image right">
+      <img src="assets/images/land2.jpg" alt="Right image">
+    </div>
+  </div>
+
+  <div class="rhodes-vertical"> <!-- Decorative vertical boxes -->
+    <div class="vertical-box box-a"></div>
+    <div class="vertical-box box-b"></div>
+  </div>
+
+</section>
+
+
+</body>
+
+</html>
